@@ -1,25 +1,20 @@
 import sys, os
 sys.path.append(os.path.dirname(__file__))
-from .node import (ResetModelPatcherCalculateWeight,
-                   ApplyDenoiseMaskScheduler,
-                   DetailTransferAdd,
-                   DetailTransferLatentAdd,
-                   DynamicImageResize)
+from .node import (ApplyDenoiseMaskSchedulerWithSigma,
+                   ApplyDenoiseMaskSchedulerWithStep,
+                   DynamicImageResize,
+                   )
 
 
 NODE_CLASS_MAPPINGS = {
-    "ResetModelPatcherCalculateWeight": ResetModelPatcherCalculateWeight,
-    "ApplyDenoiseMaskScheduler": ApplyDenoiseMaskScheduler,
-    "DetailTransferAdd":DetailTransferAdd,
-    "DetailTransferLatentAdd":DetailTransferLatentAdd,
-    "DynamicImageResize":DynamicImageResize
+    "ApplyDenoiseMaskSchedulerWithSigma": ApplyDenoiseMaskSchedulerWithSigma,
+    "ApplyDenoiseMaskSchedulerWithStep": ApplyDenoiseMaskSchedulerWithStep,
+    "DynamicImageResize":DynamicImageResize,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ResetModelPatcherCalculateWeight": "Reset injected model patcher (middlek)",
-    "ApplyDenoiseMaskScheduler": "Apply denoise mask scheduler (middlek)",
-    "DetailTransferAdd":"Detail transfer mode:add (middlek)",
-    "DetailTransferLatentAdd": "Detail transfer latent mode:add (middlek)",
-    "DynamicImageResize":"Dynamic image resize (middlek)"
+    "ApplyDenoiseMaskSchedulerWithSigma": "Apply Denoise Mask Scheduler (use sigma)",
+    "ApplyDenoiseMaskSchedulerWithStep": "Apply Denoise Mask Scheduler (use step)",
+    "DynamicImageResize":"Dynamic image resize",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

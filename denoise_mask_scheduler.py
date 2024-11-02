@@ -1,13 +1,14 @@
+from typing import Literal 
 import torch
 
 class DenoiseMaskScheduler:
     def __init__(self,
+                 scheduler_type:Literal["skip_with_step", "skip_with_sigma"],
                  start_sigma:float=15.0, 
                  end_sigma:float=0.5, 
                  start_step:int=0,
                  end_step:int=30,
                  mask_alpha:float=1.0,
-                 scheduler_type:str="skip_with_step",
                  kernel_size:int=7,
                 ):
         self.kernel_size = kernel_size
