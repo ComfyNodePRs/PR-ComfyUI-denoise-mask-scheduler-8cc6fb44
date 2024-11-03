@@ -6,7 +6,7 @@ In inpainting tasks, the non-mask area should remain unchanged. However, this of
 
 At each sampling step, the denoise mask is progressively modified according to predefined rules using the `denoise_mask_function` of comfyui modelpatcher options. I refer to this process as the ***denoise mask schedule***. This schedule can include transformations like mask skipping, random masking, and morphology adjustments.
 
-however, only the skip option is currently implemented. New schedules will be continuously added as effective ones are identified.
+However, only the skip option is currently implemented. New schedules will be continuously added as effective ones are identified.
 
 ## Install
 Download the repository and unpack into the custom_nodes folder in the ComfyUI installation directory.
