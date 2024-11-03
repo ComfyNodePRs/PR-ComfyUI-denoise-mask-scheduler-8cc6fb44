@@ -4,7 +4,7 @@ ComfyUI-denoise-mask-scheduler experimental approach involves selectively applyi
 ## Introduction
 In inpainting tasks, the non-mask area should remain unchanged. However, this often results in visible mask boundaries. **If minor alterations to parts of the non-mask area are acceptable, this approach can be quite effective.**
 
-At each sampling step, the denoise mask is progressively modified according to predefined rules using the `denoise_mask_function` of comfyui modelpatcher options. I refer to this process as the "denoise mask schedule." This schedule can include transformations like mask skipping, random masking, and morphology adjustments.
+At each sampling step, the denoise mask is progressively modified according to predefined rules using the `denoise_mask_function` of comfyui modelpatcher options. I refer to this process as the ***denoise mask schedule***. This schedule can include transformations like mask skipping, random masking, and morphology adjustments.
 
 however, only the skip option is currently implemented. New schedules will be continuously added as effective ones are identified.
 
