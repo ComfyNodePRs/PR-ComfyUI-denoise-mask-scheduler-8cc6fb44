@@ -78,6 +78,8 @@ class ApplyDenoiseMaskSchedulerWithStep:
         else:
             raise TypeError(f"'{type(model)}' is not a ComfyUI ModelPatcher type.")
 
+        inject_ksampler()
+        
         return (model, )
 
 # 동적 이미지 리사이즈
