@@ -25,7 +25,7 @@ git clone https://github.com/MiddleKD/ComfyUI-denoise-mask-scheduler.git
 ![image](assets/node_ex_skip_and_alpha_sigma.png)
 
 ## Workflows
-### [Skip mask and Apply alpha](workflows/skip_and_alpha.json)
+### [Skip mask and Apply alpha](worflows/skip_and_alpha.json)
 ![image](assets/skip_and_alpha.png)
 - basic inpainting
 ![image](assets/skip_and_alpha_inpaint.jpg)
