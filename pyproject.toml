@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-denoise-mask-scheduler"
+description = "ComfyUI-denoise-mask-scheduler experimental approach involves selectively applying a denoise mask at each step during the inpainting inference process in diffusion models."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/MiddleKD/ComfyUI-denoise-mask-scheduler"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-denoise-mask-scheduler"
+Icon = ""
